@@ -16,15 +16,10 @@ export class App extends Component {
   };
 
   handleFormSubmit = newContact => {
-    // const newContact = {
-    //   id: contact.id,
-    //   name: contact.name,
-    //   number: contact.number,
-    // };
 
-    const ContactValue = newContact.name.toLowerCase();
+    const сontactValue = newContact.name.toLowerCase();
     const duplicateСontact = this.state.contacts.find(
-      contact => contact.name.toLowerCase() === ContactValue
+      contact => contact.name.toLowerCase() === сontactValue
     );
 
     duplicateСontact
